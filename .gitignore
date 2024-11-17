@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dossiers build/production
+dist/
+build/
+
+# Fichiers système (ex : macOS, VSCode, etc.)
+.DS_Store
+Thumbs.db
+
+# Dossiers d'éditeurs et IDE
+.vscode/
+.idea/
+
+# Fichiers de configuration spécifiques à l'IDE (optionnel)
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environnement de développement
+.env
+
+# Autres fichiers sensibles à ignorer (optionnel)
+.env.local
+.env.*.local
+
+# Fichiers d'extension NPM (ex : installés par "npm install --global")
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+frontend/dist/       # Ignore la sortie de Vite (si utilisée)
+backend/node_modules/ # Si tu as un dossier "node_modules" dans le dossier backend
