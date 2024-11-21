@@ -4,7 +4,7 @@ function GamePage() {
     return (
         <div>
             <h1>Bienvenue sur la Game Page</h1>
-            <p>Ceci est la page principale de votre jeu type Ogame.</p>
+            <p>Ceci est la page principale du jeu.</p>
         </div>
     );
 }

@@ -1,7 +1,6 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');  // Importer l'instance Sequelize
+const sequelize = require('../config/database');
 
-// Définir le modèle User
 const User = sequelize.define('User', {
     id: {
         type: DataTypes.INTEGER,
@@ -18,9 +17,8 @@ const User = sequelize.define('User', {
     }
 });
 
-// Synchroniser la table avec la base de données
 User.sync()
-    .then(() => console.log('Table "users" synchronisée avec succès'))
-    .catch(err => console.error('Erreur lors de la synchronisation', err));
+    .then(() => console.log('Table "users" synchronized'))
+    .catch(err => console.error('Error syncing user', err));
 
 module.exports = User;
